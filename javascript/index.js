@@ -56,7 +56,7 @@ if (a >= 90 && a <= 100) {
   console.log("F");
 }
 
-//11/29 
+//11/29
 let number = -2;
 
 if (number >= 1) {
@@ -116,7 +116,6 @@ switch (day) {
 }
 console.log(dayName);
 
-
 let person = "zaya";
 let comeIn;
 
@@ -133,7 +132,6 @@ switch (person) {
 }
 console.log(comeIn);
 
-
 let date = 6;
 switch (date) {
   case 1:
@@ -143,25 +141,73 @@ switch (date) {
   case 5:
     console.log("week");
     break;
-    case 6:
-        case 7:
+  case 6:
+  case 7:
     console.log("weekend");
-break;
-default: 
-console.log("false day");
+    break;
+  default:
+    console.log("false day");
 }
 
 let age = 21;
 let message = age >= 18 ? "та насанд хүрсэн байна" : "та хүүхдээрээ байна";
 
-console.log(message)
+console.log(message);
 
 let age1 = 25;
 
-let isZuvshuureltei = age >=21?"танд зөвшөөрөл байна" : "танд зөвшөөрөл байхгүй байна";
-console.log(isZuvshuureltei)
+let isZuvshuureltei =
+  age >= 21 ? "танд зөвшөөрөл байна" : "танд зөвшөөрөл байхгүй байна";
+console.log(isZuvshuureltei);
 
-// is - хамгийн зөв 
-// body : margin: 0; гэж бичиж байх 
-// BEST PRACTICE 
+// is - хамгийн зөв
+// body : margin: 0; гэж бичиж байх
+// BEST PRACTICE
+
+let year = 2013;
+let leapYear;
+
+//11/30
+
+let balance =0
+
+let value = window.prompt("end toon utga bichne uu?");
+let currencyFrom = window.prompt(
+  "end temdegt oruulna uu? \n1.USD, \n2.MNT, \n3.CNY, \n4.RUB"
+);
+switch (currencyFrom){
+  case"1":
+  currencyFrom = 3450;
+  break;
+  case"2":
+  currencyFrom = 1;
+  break;
+  case"3":
+  currencyFrom = 480;
+  break;
+  case"4":
+  currencyFrom = 38;
+  break;
+  default:
+    console.log("Buruu orolt"); 
+}
+let currencyTo = window.prompt(" end temdeg oruulna uu? \n1. USD\n2. MNT\n3. CNY\n4. RUB");
+switch(currencyTo){
+  case "1":
+    currencyTo = 3450;
+    break;
+    case "2":
+      currencyTo = 1;
+      break;
+      case "3":
+        currencyTo = 480;
+        break;
+        case "4":
+          currencyTo = 38;
+          break;
+          default:
+            console.log("Buruu orolt");
+}
+window.alert((currencyFrom * value) / currencyTo)
+
 
